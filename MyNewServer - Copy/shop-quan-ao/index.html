@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="UrbanWear - cửa hàng thời trang trực tuyến">
+  <title>UrbanWear | Thời trang mỗi ngày</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#">URBAN<span>WEAR</span></a>
+    <nav aria-label="Điều hướng chính">
+      <a href="#home">Trang chủ</a>
+      <a href="#products">Sản phẩm</a>
+      <a href="#about">Giới thiệu</a>
+      <a href="#contact">Liên hệ</a>
+    </nav>
+    <button class="cart-button" id="cartButton" aria-label="Mở giỏ hàng">
+      Giỏ hàng <span id="cartCount">0</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">BỘ SƯU TẬP MỚI 2026</p>
+        <h1>Mặc đẹp theo<br><span>cách của bạn.</span></h1>
+        <p>Những thiết kế trẻ trung, dễ phối đồ và phù hợp cho mọi ngày.</p>
+        <a class="primary-button" href="#products">Khám phá ngay</a>
+      </div>
+      <div class="hero-image">
+        <img src="images/hero.svg" alt="Ảnh minh họa bộ sưu tập thời trang UrbanWear">
+      </div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">URBANWEAR COLLECTION</p>
+          <h2>Sản phẩm nổi bật</h2>
+        </div>
+        <div class="filters">
+          <input id="searchInput" type="search" placeholder="Tìm sản phẩm..." aria-label="Tìm sản phẩm">
+          <select id="categoryFilter" aria-label="Lọc danh mục">
+            <option value="all">Tất cả</option>
+            <option value="ao">Áo</option>
+            <option value="quan">Quần</option>
+            <option value="phukien">Phụ kiện</option>
+          </select>
+        </div>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="promo" id="about">
+      <div>
+        <p class="eyebrow">PHONG CÁCH CỦA BẠN</p>
+        <h2>Đơn giản. Hiện đại. Tự tin.</h2>
+        <p>UrbanWear mang đến lựa chọn thời trang tiện dụng với mức giá hợp lý.</p>
+      </div>
+      <a class="light-button" href="#contact">Tìm hiểu thêm</a>
+    </section>
+
+    <section class="contact section" id="contact">
+      <p class="eyebrow">CHÚNG TÔI Ở ĐÂY ĐỂ HỖ TRỢ</p>
+      <h2>Liên hệ với UrbanWear</h2>
+      <p>Email: support@urbanwear.example · Điện thoại: 0123 456 789</p>
+      <p class="note">Thông tin liên hệ trên là dữ liệu mẫu, hãy thay bằng thông tin của nhóm bạn.</p>
+    </section>
+  </main>
+
+  <div class="cart-panel" id="cartPanel" aria-hidden="true">
+    <div class="cart-header">
+      <h2>Giỏ hàng của bạn</h2>
+      <button id="closeCart" class="close-button" aria-label="Đóng giỏ hàng">×</button>
+    </div>
+    <div id="cartItems" class="cart-items"><p class="empty-cart">Giỏ hàng đang trống.</p></div>
+    <div class="cart-footer">
+      <strong>Tổng cộng: <span id="cartTotal">0₫</span></strong>
+      <button id="checkoutButton" class="primary-button full-width">Đặt hàng</button>
+      <small>Đây là website mẫu, chưa kết nối thanh toán.</small>
+    </div>
+  </div>
+  <div class="overlay" id="overlay"></div>
+
+  <footer>
+    <p>© 2026 UrbanWear. Website demo phục vụ học tập.</p>
+  </footer>
+</body>
+</html>

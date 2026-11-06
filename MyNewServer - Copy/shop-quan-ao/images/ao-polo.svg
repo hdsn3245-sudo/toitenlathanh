@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700">
+<rect width="600" height="700" fill="#e8e3df"/>
+<circle cx="480" cy="120" r="90" fill="#ffffff" opacity=".35"/>
+<path d="M170 210 L250 160 L350 160 L430 210 L500 300 L420 360 L390 310 L390 570 L210 570 L210 310 L180 360 L100 300 Z" fill="#8c6657" opacity=".92"/>
+<path d="M250 160 Q300 240 350 160" fill="none" stroke="#ffffff" stroke-width="12" opacity=".55"/>
+<text x="300" y="625" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" font-weight="700" fill="#8c6657">ÁO POLO</text>
+<text x="300" y="90" text-anchor="middle" font-family="Arial,sans-serif" font-size="27" letter-spacing="7" font-weight="700" fill="#8c6657">MINIMAL POLO</text>
+</svg>
